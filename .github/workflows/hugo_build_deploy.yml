@@ -1,0 +1,96 @@
+name: Build & Deploy Hugo
+
+on: workflow_dispatch
+
+jobs:
+  hugo_build_deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PAT_GH_TOKEN }}
+          path: thevwj
+
+      - name: Temporary Hugo Directory
+        run: mkdir /tmp/hugo/
+
+      # - name: Set Env
+      #   id: set_version
+      #   run: |
+      #     git fetch --tags
+      #     echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//} >> $GITHUB_ENV
+          
+      # - name: Last Tag
+      #   run: |
+      #     echo ::set-output name=LAST_VALUE::$($VERSION | awk -F'.' '{print $3}') >> $GITHUB_ENV
+
+      # - name: Create New Tag
+      #   run: |   
+      #     $LAST_VALUE=$((LAST_VALUE+1))
+      #     echo ::set-output name=NEW_TAG::$($CURRENT_TAG | awk -v last="$LAST_VALUE" -F'.' '{print $1"."$2"."last}') >> $GITHUB_ENV
+
+      # - name: test
+      #   run: |
+      #     echo $NEW_TAG
+        
+      # Pull documentation files
+      - name: School Note Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: TheVwj/School-Notes
+          token: ${{ secrets.PAT_TOKEN }}
+          path: school_notes
+
+      - name: Clean-Up
+        run: |
+          cd thevwj
+          cp content/_index.md  /tmp/hugo/
+          cp content/_header.md /tmp/hugo/
+          cp content/_footer.md /tmp/hugo/
+          rm -rf content/*
+          rm -rf public/*
+          rm -rf static/*
+          cp /tmp/hugo/_index.md /home/runner/work/TheVwj/TheVwj/thevwj/content/
+          cp /tmp/hugo/_header.md /home/runner/work/TheVwj/TheVwj/thevwj/content/
+          cp /tmp/hugo/_footer.md /home/runner/work/TheVwj/TheVwj/thevwj/content/
+          cd ..
+
+      - name: Pull_School_Notes
+        run: |
+          cd school_notes
+          cp -R school_notes /home/runner/work/TheVwj/TheVwj/thevwj/content/
+
+      # Next two stages should always be last
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.59.1"
+          extended: true
+
+      - name: Build
+        run: |
+          cd /home/runner/work/TheVwj/TheVwj/thevwj/
+          git fetch origin
+          rm -rf public
+          mkdir public
+          git worktree prune
+          rm -rf .git/worktrees/public/
+          git worktree add -B gh-pages public origin/gh-pages
+          rm -rf public/*
+          hugo
+
+      - name: Deploy
+        run: |
+          cd /home/runner/work/TheVwj/TheVwj/thevwj/
+          git rm -rf .git
+          git init
+          git config --global user.email ${{ secrets.GH_EMAIL }}
+          git config --global user.name ${{ secrets.GH_USER }}
+          git add .
+          git commit -m "GitHub Actions build ${GITHUB_RUN_NUMBER}"
+          cd public 
+          git init && git add --all && git commit -m "Publishing To GH-Pages"
+          cd /home/runner/work/TheVwj/TheVwj/thevwj/
+          git push -u -f origin HEAD:master
+          git push -f --all

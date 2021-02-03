@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+public
+localhugotester.sh
+tester.sh
+publish_to_gh_pages.sh
