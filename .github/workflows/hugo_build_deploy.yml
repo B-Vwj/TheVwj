@@ -57,7 +57,7 @@ jobs:
           cp /tmp/hugo/_index.md                /home/runner/work/TheVwj/TheVwj/thevwj/content/
           cp /tmp/hugo/_header.md               /home/runner/work/TheVwj/TheVwj/thevwj/content/
           cp /tmp/hugo/_footer.md               /home/runner/work/TheVwj/TheVwj/thevwj/content/
-          cp /tmp/hugo/theme-original           /home/runner/work/TheVwj/TheVwj/thevwj/static/
+          cp -R /tmp/hugo/theme-original           /home/runner/work/TheVwj/TheVwj/thevwj/static/
           cd ..
 
       - name: Pull_School_Notes
