@@ -75,8 +75,6 @@ jobs:
       - name: Build
         run: |
           cd /home/runner/work/TheVwj/TheVwj/thevwj/
-          git remote remove origin
-          git remote add origin ${{ secrets.GH_SSH }}
           git fetch origin
           rm -rf public
           mkdir public
