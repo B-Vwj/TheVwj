@@ -8,7 +8,7 @@ themesdir = "themes/"
 [params]
 editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 themeStyle = "original"
-themeVariant = "vwj" # choose theme variant "green", "gold" , "gray", "blue" (default)
+themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
 ordersectionsby = "weight" # ordersectionsby = "title"
 disableHomeIcon = true # default is false
 disableSearch = false # default is false
