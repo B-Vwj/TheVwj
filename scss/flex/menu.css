@@ -1,0 +1,143 @@
+article > aside {
+  background-color: #f9f9f9;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: 0;
+  padding: 2rem 0rem 1rem 0rem;
+  position: fixed;
+  top: 3.5rem;
+  width: 20rem;
+  overflow-y: auto;
+}
+
+article > aside .menu {
+  line-height: 2rem;
+  list-style-type: none;
+}
+
+article > aside .menu > label {
+  display: block;
+  font-family: 'Novacento Sans Wide', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+  font-weight: 100;
+  font-size: 130%;
+  margin-left: 1rem;
+}
+
+article > aside .menu ul {
+  display: none;
+}
+
+article > aside .menu > .dd-item {
+  margin: 0.5rem 0px 0.5rem 20px;
+}
+
+article > aside .menu .dd-item {
+  padding-left: 1rem;
+  list-style: none;
+  font-size: 13px;
+}
+
+article > aside .menu .dd-item.alwaysopen > ul {
+  display: block;
+}
+
+article > aside .menu .dd-item.parent > ul {
+  display: block;
+}
+
+article > aside .menu .dd-item.active > ul {
+  display: block;
+}
+
+article > aside .menu .dd-item.active > div {
+  background-color: #eee;
+}
+
+article > aside .menu .dd-item.active > div * {
+  font-weight: bold;
+  border-bottom: dotted 1px red;
+}
+
+article > aside .menu .dd-item.haschildren > div {
+  margin-left: -20px;
+}
+
+article > aside .menu .dd-item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+article > aside .menu .dd-item div * {
+  line-height: inherit;
+}
+
+article > aside .menu .dd-item div i.read-icon {
+  display: none;
+}
+
+article > aside .menu .dd-item div i.category-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 20px;
+  cursor: pointer;
+}
+
+article > aside .menu .dd-item div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding: 0 0rem;
+  text-decoration: none;
+}
+
+article > aside .menu .dd-item div a:hover, article > aside .menu .dd-item div a:focus, article > aside .menu .dd-item div a:active {
+  background-color: #eee;
+  border-radius: .2rem;
+  padding: 0 0rem;
+}
+
+article > aside .menu .dd-item div i.category-icon:active,
+article > aside .menu .dd-item div i.category-icon:focus,
+article > aside .menu .dd-item div i.category-icon:hover {
+  background-color: #eee;
+  border-radius: .2rem;
+  padding: 0 0rem;
+}
+
+article > aside .menu .dd-item li {
+  border-left: 1px solid #eee;
+}
+
+article > aside section {
+  margin: 2rem 0rem;
+}
+/*# sourceMappingURL=menu.css.map */
