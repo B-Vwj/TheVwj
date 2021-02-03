@@ -50,7 +50,7 @@ jobs:
           cp content/_index.md                  /tmp/hugo/
           cp content/_header.md                 /tmp/hugo/
           cp content/_footer.md                 /tmp/hugo/
-          cp static/theme-original/             /tmp/hugo/
+          cp -R static/theme-original/             /tmp/hugo/
           rm -rf content/*
           rm -rf public/*
           rm -rf static/*
