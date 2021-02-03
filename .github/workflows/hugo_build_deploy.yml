@@ -57,7 +57,7 @@ jobs:
           cp /tmp/hugo/_index.md                /home/runner/work/TheVwj/TheVwj/thevwj/content/
           cp /tmp/hugo/_header.md               /home/runner/work/TheVwj/TheVwj/thevwj/content/
           cp /tmp/hugo/_footer.md               /home/runner/work/TheVwj/TheVwj/thevwj/content/
-          cp -R /tmp/hugo/theme-original           /home/runner/work/TheVwj/TheVwj/thevwj/static/
+          cp -R/tmp/hugo/theme-original           /home/runner/work/TheVwj/TheVwj/thevwj/static/
           cd ..
 
       - name: Pull_School_Notes
@@ -65,27 +65,19 @@ jobs:
           cd school_notes
           cp -R school_notes                    /home/runner/work/TheVwj/TheVwj/thevwj/content/
 
-      # Next two stages should always be last
+      # These stages should always be last
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.59.1"
           extended: true
 
-      - name: Build
+      - name: Get Origin Remote
         run: |
           cd /home/runner/work/TheVwj/TheVwj/thevwj/
-          git remote -v
           git fetch origin
-          rm -rf public
-          mkdir public
-          git worktree prune
-          rm -rf .git/worktrees/public/
-          git worktree add -B gh-pages public origin/gh-pages
-          rm -rf public/*
-          hugo
 
-      - name: Deploy
+      - name: Deploy To Master Branch
         run: |
           cd /home/runner/work/TheVwj/TheVwj/thevwj/
           git config --global user.email ${{ secrets.GH_EMAIL }}
@@ -93,6 +85,16 @@ jobs:
           git add .
           git commit -m "GitHub Actions build ${GITHUB_RUN_NUMBER}"
           git push -u -f origin HEAD:master
+
+      - name: Deploy To GH-Pages Branch
+        run: |
+          rm -rf public
+          mkdir public
+          git worktree prune
+          rm -rf .git/worktrees/public/
+          git worktree add -B gh-pages public origin/gh-pages
+          rm -rf public/*
+          hugo
           cd public 
           git init && git add --all && git commit -m "Publishing To GH-Pages"
           git push -f origin gh-pages
