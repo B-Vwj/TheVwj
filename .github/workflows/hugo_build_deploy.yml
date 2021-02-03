@@ -9,6 +9,7 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v2
         with:
+          fetch-depth: 0
           token: ${{ secrets.PAT_GH_TOKEN }}
           path: thevwj
 
@@ -46,21 +47,23 @@ jobs:
       - name: Clean-Up
         run: |
           cd thevwj
-          cp content/_index.md  /tmp/hugo/
-          cp content/_header.md /tmp/hugo/
-          cp content/_footer.md /tmp/hugo/
+          cp content/_index.md                  /tmp/hugo/
+          cp content/_header.md                 /tmp/hugo/
+          cp content/_footer.md                 /tmp/hugo/
+          cp static/theme-original/style.css    /tmp/hugo/
           rm -rf content/*
           rm -rf public/*
           rm -rf static/*
-          cp /tmp/hugo/_index.md /home/runner/work/TheVwj/TheVwj/thevwj/content/
-          cp /tmp/hugo/_header.md /home/runner/work/TheVwj/TheVwj/thevwj/content/
-          cp /tmp/hugo/_footer.md /home/runner/work/TheVwj/TheVwj/thevwj/content/
+          cp /tmp/hugo/_index.md                /home/runner/work/TheVwj/TheVwj/thevwj/content/
+          cp /tmp/hugo/_header.md               /home/runner/work/TheVwj/TheVwj/thevwj/content/
+          cp /tmp/hugo/_footer.md               /home/runner/work/TheVwj/TheVwj/thevwj/content/
+          cp /tmp/hugo/theme-original/style.css /home/runner/work/TheVwj/TheVwj/thevwj/static/
           cd ..
 
       - name: Pull_School_Notes
         run: |
           cd school_notes
-          cp -R school_notes /home/runner/work/TheVwj/TheVwj/thevwj/content/
+          cp -R school_notes                    /home/runner/work/TheVwj/TheVwj/thevwj/content/
 
       # Next two stages should always be last
       - name: Setup Hugo
@@ -72,6 +75,8 @@ jobs:
       - name: Build
         run: |
           cd /home/runner/work/TheVwj/TheVwj/thevwj/
+          git remote remove origin
+          git remote add origin ${{ secrets.GH_SSH }}
           git fetch origin
           rm -rf public
           mkdir public
@@ -85,7 +90,7 @@ jobs:
         run: |
           cd /home/runner/work/TheVwj/TheVwj/thevwj/
           git config --global user.email ${{ secrets.GH_EMAIL }}
-          git config --global user.name ${{ secrets.GH_USER }}
+          git config --global user.name ${{ secrets.PAT_USERNAME }}
           git add .
           git commit -m "GitHub Actions build ${GITHUB_RUN_NUMBER}"
           git push -u -f origin HEAD:master
