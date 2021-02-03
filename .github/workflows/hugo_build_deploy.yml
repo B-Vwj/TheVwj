@@ -93,7 +93,7 @@ jobs:
           git config --global user.name ${{ secrets.PAT_USERNAME }}
           git add .
           git commit -m "GitHub Actions build ${GITHUB_RUN_NUMBER}"
-          git push -u -f "https://${{ secrets.PAT_USERNAME }}:${{ secrets.PAT_TOKEN }}@github.com/TheVwj.git" HEAD:master
+          git push -u -f "git@github.com/TheVwj.git" HEAD:master
           cd public 
           git init && git add --all && git commit -m "Publishing To GH-Pages"
           git push -f origin gh-pages
