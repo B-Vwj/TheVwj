@@ -41,6 +41,7 @@ jobs:
           repository: TheVwj/School-Notes
           token: ${{ github.token }}
           path: school_notes
+          ref: master
 
       - name: Clean-Up
         run: |
