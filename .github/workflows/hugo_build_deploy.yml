@@ -39,7 +39,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: TheVwj/School-Notes
-          token: ${{ secrets.PAT_TOKEN }}
           path: school_notes
 
       - name: Clean-Up
