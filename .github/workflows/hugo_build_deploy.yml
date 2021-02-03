@@ -84,7 +84,7 @@ jobs:
       - name: Deploy
         run: |
           cd /home/runner/work/TheVwj/TheVwj/thevwj/
-          git rm -rf .git
+          rm -rf .git
           git init
           git config --global user.email ${{ secrets.GH_EMAIL }}
           git config --global user.name ${{ secrets.GH_USER }}
