@@ -40,6 +40,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: B-Vwj/School-Notes
+          token: ${{ secrets.PAT_TOKEN }}
           path: school_notes
           ref: master
 
@@ -56,7 +57,7 @@ jobs:
           cp /tmp/hugo/_index.md                /home/runner/work/TheVwj/TheVwj/thevwj/content/
           cp /tmp/hugo/_header.md               /home/runner/work/TheVwj/TheVwj/thevwj/content/
           cp /tmp/hugo/_footer.md               /home/runner/work/TheVwj/TheVwj/thevwj/content/
-          cp -R /tmp/hugo/theme-original        /home/runner/work/TheVwj/TheVwj/thevwj/static/
+          cp -R/tmp/hugo/theme-original           /home/runner/work/TheVwj/TheVwj/thevwj/static/
           cd ..
 
       - name: Pull_School_Notes
@@ -64,17 +65,26 @@ jobs:
           cd school_notes
           cp -R school_notes                    /home/runner/work/TheVwj/TheVwj/thevwj/content/
 
-      # These stages should always be last
+      # Next two stages should always be last
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.59.1"
           extended: true
 
-      - name: Get Origin Remote
+      - name: Build
         run: |
           cd /home/runner/work/TheVwj/TheVwj/thevwj/
+          git remote remove origin
+          git remote add origin ${{ secrets.GH_SSH }}
           git fetch origin
+          rm -rf public
+          mkdir public
+          git worktree prune
+          rm -rf .git/worktrees/public/
+          git worktree add -B gh-pages public origin/gh-pages
+          rm -rf public/*
+          hugo
 
       - name: Deploy To Master Branch
         run: |
@@ -83,17 +93,7 @@ jobs:
           git config --global user.name ${{ secrets.PAT_USERNAME }}
           git add .
           git commit -m "GitHub Actions build ${GITHUB_RUN_NUMBER}"
-          git push -u -f origin HEAD:master
-
-      - name: Deploy To GH-Pages Branch
-        run: |
-          rm -rf public
-          mkdir public
-          git worktree prune
-          rm -rf .git/worktrees/public/
-          git worktree add -B gh-pages public origin/gh-pages
-          rm -rf public/*
-          hugo
+          git push -u -f "https://${{ secrets.PAT_USERNAME }}:${{ secrets.PAT_TOKEN }}@github.com/TheVwj.git" HEAD:master
           cd public 
           git init && git add --all && git commit -m "Publishing To GH-Pages"
           git push -f origin gh-pages
