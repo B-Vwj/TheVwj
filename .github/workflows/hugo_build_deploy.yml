@@ -38,8 +38,8 @@ jobs:
       - name: School Note Checkout
         uses: actions/checkout@v2
         with:
-          repository: TheVwj/School-Notes
-          token: ${{ github.token }}
+          repository: B-Vwj/School-Notes
+          token: ${{ PAT_TOKEN }}
           path: school_notes
           ref: master
 
