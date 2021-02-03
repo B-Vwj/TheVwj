@@ -89,8 +89,7 @@ jobs:
           git config --global user.name ${{ secrets.GH_USER }}
           git add .
           git commit -m "GitHub Actions build ${GITHUB_RUN_NUMBER}"
+          git push -u -f origin HEAD:master
           cd public 
           git init && git add --all && git commit -m "Publishing To GH-Pages"
-          cd /home/runner/work/TheVwj/TheVwj/thevwj/
-          git push -u -f origin HEAD:master
-          git push -f --all
+          git push -f origin HEAD:gh-pages
