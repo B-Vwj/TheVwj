@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome to TheVwj on TheVwj</title>
-    <link>/</link>
+    <link>https://b-vwj.github.io/TheVwj/</link>
     <description>Recent content in Welcome to TheVwj on TheVwj</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://b-vwj.github.io/TheVwj/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>/_footer/</link>
+      <link>https://b-vwj.github.io/TheVwj/_footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/_footer/</guid>
+      <guid>https://b-vwj.github.io/TheVwj/_footer/</guid>
       <description>TheVwj 2021</description>
     </item>
     
     <item>
       <title></title>
-      <link>/_header/</link>
+      <link>https://b-vwj.github.io/TheVwj/_header/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/_header/</guid>
+      <guid>https://b-vwj.github.io/TheVwj/_header/</guid>
       <description>Header</description>
     </item>
     

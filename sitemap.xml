@@ -3,25 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>https://b-vwj.github.io/TheVwj/</loc>
   </url>
   
   <url>
-    <loc>/_footer/</loc>
+    <loc>https://b-vwj.github.io/TheVwj/_footer/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/_header/</loc>
+    <loc>https://b-vwj.github.io/TheVwj/_header/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://b-vwj.github.io/TheVwj/categories/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://b-vwj.github.io/TheVwj/tags/</loc>
   </url>
   
 </urlset>
