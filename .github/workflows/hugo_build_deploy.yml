@@ -88,7 +88,7 @@ jobs:
 
       - name: Commit To GH-Pages Branch
         run: |
-          cd public 
+          cd /home/runner/work/TheVwj/TheVwj/thevwj/public/
           git init && git add --all && git commit -m "Publishing To GH-Pages"
 
       - name: Deploy to GH-Pages Branch
