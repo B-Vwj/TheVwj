@@ -84,6 +84,7 @@ jobs:
           force: true
           github_token: ${{ secrets.PAT_TOKEN }}
           branch: master
+          directory: /home/runner/work/TheVwj/TheVwj/thevwj/
 
       - name: Commit To GH-Pages Branch
         run: |
@@ -96,3 +97,4 @@ jobs:
           force: true
           github_token: ${{ secrets.PAT_TOKEN }}
           branch: gh-pages
+          directory: /home/runner/work/TheVwj/TheVwj/thevwj/
