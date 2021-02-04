@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TheVwj</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2021-02-04T21:42:31 UTC">
+<title>Polynomial Functions and Their Graphs :: TheVwj</title>
+<link rel="shortcut icon" href="/TheVwj/images/favicon.png" type="image/x-icon" />
+<link href="/TheVwj/css/nucleus.css" rel="stylesheet">
+<link href="/TheVwj/css/font-awesome.min.css" rel="stylesheet">
+<link href="/TheVwj/css/hybrid.css" rel="stylesheet">
+<link href="/TheVwj/css/featherlight.min.css" rel="stylesheet">
+<link href="/TheVwj/css/auto-complete.css" rel="stylesheet">
+<link href="/TheVwj/theme-original/style.css" rel="stylesheet">
+
+  <link href="/TheVwj/theme-original/variant-blue.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/TheVwj/css/bootstrap.min.css">
+<script src="/TheVwj/js/jquery-2.x.min.js"></script>
+<style type="text/css">
+  :root #header + #content > #left > #rlblock_left {
+    display:none !important;
+  }
+</style>
+<meta name="description" content="3.1 Notes">
+
+
+    
+  </head>
+  <body data-url="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/polynomial_funcs_and_their_graphs/">
+    
+      <div id="headermain"></div>
+<nav id="sidebar" class="">
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+      
+	
+  
+    <p>Header</p>
+
+  
+
+
+    </div>
+        <div class="searchbox">
+		    <label for="search-by"><i class="fa fa-search"></i></label>
+		    <input data-search-input id="search-by" type="text" placeholder="Search...">
+		    <span data-search-clear=""><i class="fa fa-close"></i></span>
+		</div>
+		<script type="text/javascript" src="/TheVwj/js/lunr.min.js"></script>
+		<script type="text/javascript" src="/TheVwj/js/auto-complete.js"></script>
+		<script type="text/javascript">
+        
+            var baseurl = "https:\/\/b-vwj.github.io\/TheVwj\/";
+        
+		</script>
+		<script type="text/javascript" src="/TheVwj/js/search.js"></script>
+  </div>
+
+      <ul class="topics">
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/">School Notes</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/communications/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/communications/">Communication Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/communications/fundamentals-of-public-speaking/" class="dd-item
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/communications/fundamentals-of-public-speaking/">Fundamentals of Public Speaking</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/computer-science/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/computer-science/">Computer Science Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/computer-science/data-strutures-and-algorithms/" class="dd-item
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/computer-science/data-strutures-and-algorithms/">Data Structure and Algorithms</a>
+      </div>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/computer-science/sql/" class="dd-item
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/computer-science/sql/">SQL Notes</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/english/" class="dd-item
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/english/">English Notes</a>
+      </div>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/government/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/government/">Government Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/government/american-government-and-politics/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/government/american-government-and-politics/">American Government and Politics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/government/american-government-and-politics/notes/chapter1/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/government/american-government-and-politics/notes/chapter1/">
+            American Government and Politics
+          </a>
+        </div>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/government/american-government-and-politics/glossary/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/government/american-government-and-politics/glossary/">Glossary</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/government/american-government-and-politics/glossary/extras/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/government/american-government-and-politics/glossary/extras/">
+            Extra Information
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/government/economics/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/government/economics/">Macro-Economics</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/government/economics/macro-economics/chapter1/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/government/economics/macro-economics/chapter1/">
+            Macro-Economics Chapter 1
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/government/economics/macro-economics/terms/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/government/economics/macro-economics/terms/">
+            Macro-Economics Terms
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/mathematics/">Math Notes</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/">College Algebra and Pre-calculus</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/">Chapter 3 Notes</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/polynomial_funcs_and_their_graphs/" class="dd-item active">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/polynomial_funcs_and_their_graphs/">
+            Polynomial Functions and Their Graphs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/dividing_polynomials/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/dividing_polynomials/">
+            Dividing Polynomials
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/real_zeros_of_polynomials/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/real_zeros_of_polynomials/">
+            Zeros of Polynomials
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/complex_numbers/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/complex_numbers/">
+            Complex Numbers
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/complex_zeros_and_fundamental_theorem_of_algebra/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/complex_zeros_and_fundamental_theorem_of_algebra/">
+            Complex Zeros &amp; Fundamental Theorems of Algebra
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/rational_functions/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/rational_functions/">
+            Rational Functions
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/">Chapter 4 Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/exponential_functions/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/exponential_functions/">
+            Exponential Functions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/logarithmic_functions/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/logarithmic_functions/">
+            Logarithmic Functions
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/laws_of_logs/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/laws_of_logs/">
+            Laws of Logarithms
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/exponential_and_log_equations/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/exponential_and_log_equations/">
+            Exponential and Logarithmic Equations
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/modeling_with_exp_and_log_functions/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/modeling_with_exp_and_log_functions/">
+            Modeling with Exponential and Logarithmic Functions
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-5-notes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-5-notes/">Chapter 5 Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-5-notes/unit_circle/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-5-notes/unit_circle/">
+            The Unit Circle
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-5-notes/trig_functions/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-5-notes/trig_functions/">
+            Trig Functions of Real Numbers
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-5-notes/trig_graphs/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-5-notes/trig_graphs/">
+            Trigonometric Graphs
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-5-notes/more_trig_graphs/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-5-notes/more_trig_graphs/">
+            More Trigonometric Graphs
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/">Chapter 6 Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/angles/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/angles/">
+            Angles
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/trig_funcs_in_right_triangles/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/trig_funcs_in_right_triangles/">
+            Trig Functions of right triangles
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/identities/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/identities/">
+            Identities
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/law_of_sines/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/law_of_sines/">
+            Law of Sines
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/law_of_cosine/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/law_of_cosine/">
+            Law of Cosines
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-7-notes/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-7-notes/">Chapter 7 Notes</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-7-notes/trig_identities/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-7-notes/trig_identities/">
+            Trigonometric Identities
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-7-notes/add__sub_identities/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-7-notes/add__sub_identities/">
+            Adding and Subtracting Identities
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-7-notes/double_and_half_angle_indentities/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-7-notes/double_and_half_angle_indentities/">
+            Double and Half angle Identities
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-7-notes/inverse_trig_functions/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-7-notes/inverse_trig_functions/">
+            Trigonometric Inverse Functions
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/homework/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/homework/">Algebra and Trig HW</a><i class="fa fa-angle-right fa-lg category-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/homework/chapter3_hw/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/homework/chapter3_hw/">
+            Chapter 3 Math HW
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/homework/chapter4_hw/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/homework/chapter4_hw/">
+            Chapter 4 Math HW
+          </a>
+        </div>
+    </li>
+      <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/homework/attendance/" class="dd-item">
+        <div>
+          <a href="/TheVwj/school_notes/mathematics/college-algebra-trig/homework/attendance/">
+            OUTDATED Math Schedule
+          </a>
+        </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/science/" class="dd-item
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/science/">Science Notes</a>
+      </div>
+    </li>
+    <li data-nav-id="https://b-vwj.github.io/TheVwj/school_notes/test/" class="dd-item
+        ">
+      <div>
+      <a href="/TheVwj/school_notes/test/">Test</a>
+      </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+        <section id="shortcuts">
+                <li class="" role=""><h3>More</h3><a href="https://github.com/B-Vwj/TheVwj" target="_blank" rel="noopener"><i class='fa fa-github'></i> <label>Github repo</label></a></li>
+        </section>
+
+    <hr />
+    <li></li>
+    
+    </ul>
+
+ <section id="footer">
+    </section>
+  </div>
+</nav>
+
+
+
+<section id="body">
+<div id="overlay"></div>
+<div class="padding highlightable">
+
+  <div id="top-bar">
+    
+      
+      
+      
+    <div id="top-github-link">
+      <a class="github-link" href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/school_notes/Mathematics/College%20Algebra%20&amp;%20Trig/Notes/Chapter%203%20Notes/polynomial_funcs_and_their_graphs.md" target="blank">
+        <i class="fa fa-code-fork"></i>
+        Improve this page
+      </a>
+    </div><div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <span id="sidebar-toggle-span">
+          <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+            <i class="fa fa-bars"></i>
+          </a>
+        </span>
+        <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+        <span class="links">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <a href='https://b-vwj.github.io/TheVwj/'>Welcome to TheVwj</a> > <a href='https://b-vwj.github.io/TheVwj/school_notes/'>School Notes</a> > <a href='https://b-vwj.github.io/TheVwj/school_notes/mathematics/'>Math Notes</a> > <a href='https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/'>College Algebra and Pre-calculus</a> > <a href='https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-3-notes/'>Chapter 3 Notes</a> > Polynomial Functions and Their Graphs
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+        </span>
+    </div>
+    
+    
+    <div class="progress">
+        <div class="wrapper">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#notes"><em>Notes:</em></a>
+<ul>
+<li><a href="#terms">Terms</a></li>
+<li><a href="#other-things-to-remember">Other Things To Remember:</a>
+<ul>
+<li><a href="#names-of-certain-degrees">Names of certain degrees</a></li>
+<li><a href="#exponents-affect-the-graph">Exponents affect the graph!</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+    </div>
+    
+
+  </div>
+
+
+<div id="body-inner">
+  
+    <h1>Polynomial Functions and Their Graphs</h1>
+  
+
+
+
+    
+    
+    
+    
+
+<h2 id="notes"><em>Notes:</em></h2>
+
+<h3 id="terms">Terms</h3>
+
+<p><strong><em>Polynomial function(s):</em></strong> a polynomial function of degree <strong><em>n</em></strong> is a function of the form&hellip; <br/> <strong><em>P(x) = a<sub>(n)</sub>x<sup>(n)</sup> + a<sub>(n-1)</sub>x<sup>(n-1)</sup> + &hellip; + a<sub>1</sub>x + a<sub>0</sub></em></strong> <br/> where <strong><em>n</em></strong> is a nonnegative integer and a<sub>n</sub> =/= 0</p>
+
+<p><strong><em>Leading Term:</em></strong> of a polynomial is the term with the highest exponent.</p>
+
+<p><strong><em>Zeros of a polynomial:</em></strong> P(x) are numbers c, such that P&copy; = 0
+- &ldquo;x coordinates of the x-intercepts.&rdquo;</p>
+
+<p><strong><em>The end behavior of a polynomial:</em></strong> For the graph of <em>any</em> polynomial function, the ends will either point up or down. For example:</p>
+
+<pre><code>As x -&gt; ∞; f(x) (will either) -&gt; ∞ OR -∞
+As x -&gt; -∞; f(x) (will either) -&gt; ∞ OR -∞
+</code></pre>
+
+<p><code>Odd Degree &amp; Positive Leading Coefficient: Left down &amp; Right up.</code></p>
+
+<p><code>Even Degree &amp; Positive Leading Coefficient: Both ends up.</code></p>
+
+<p><code>Odd Degree &amp; Negative Leading Coefficient: Left up &amp; Right Down.</code></p>
+
+<p><code>Even Degree &amp; Negative Leading Coefficient: Both ends down.</code></p>
+
+<hr />
+
+<h3 id="other-things-to-remember">Other Things To Remember:</h3>
+
+<ul>
+<li><p>The numbers <strong><em>a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub>, &hellip;, a<sub>(n)</sub></em></strong> <br/> are called <em><strong>coefficients</strong></em> of the Polynomial.</p></li>
+
+<li><p><strong><em>a<sub>0</sub></em></strong> is the <strong><em>constant coefficient</em></strong> or <strong><em>constant term</em></strong>.</p></li>
+
+<li><p>The number <strong><em>a<sub>(n)</sub></em></strong>, the coefficient of the highest power, is the <strong><em>leading coefficient</em></strong>, and the term <strong><em>a<sub>(x)</sub>x<sup>(n)</sup></em></strong> is the <strong><em>leading term</em></strong>.</p></li>
+</ul>
+
+<h4 id="names-of-certain-degrees">Names of certain degrees</h4>
+
+<ul>
+<li><p>If a polynomial consists of just a single term, then it&rsquo;s called a <strong><em>monomial</em></strong>.
+For example: <br/> <strong><em>P(x) = x<sup>3</sup></em></strong> and <strong><em>Q(x) = -6x<sup>5</sup></em></strong> are monomials.</p></li>
+
+<li><p><strong><em>f(x) = a<sub>(1)</sub>x +/- a<sub>0</sub></em></strong> is considered a &ldquo;<strong><em>Linear</em></strong>&rdquo; equation.</p></li>
+
+<li><p><strong><em>f(x) = a<sub>(2)</sub>x<sup>2</sup> +/- a<sub>(1)</sub>x +/- a<sub>0</sub></em></strong> is considered a &ldquo;<strong><em>Quadratic</em></strong>&rdquo; equation.</p></li>
+
+<li><p><strong><em>f(x) = a<sub>(3)</sub>x<sup>3</sup> + a<sub>(2)</sub>x<sup>2</sup> + a<sub>(1)</sub>x + a<sub>0</sub></em></strong> is considered a &ldquo;<strong><em>Cubic</em></strong>&rdquo; equation.</p></li>
+</ul>
+
+<h4 id="exponents-affect-the-graph">Exponents affect the graph!</h4>
+
+<p>Even exponent:
+- Parabola
+- Bigger exponent means flatter base (near zero)(?)
+Odd exponent:
+- Zig-Zag(?)
+- Bigger exponent means flatter base (near zero)(?)</p>
+
+
+    
+    
+          <footer class=" footline" >
+	
+</footer>
+  </div>
+</div>
+
+<div id="navigation">
+</div>
+
+</section>
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+  <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+</div>    
+
+<script src="/TheVwj/js/clipboard.min.js"></script>
+<script src="/TheVwj/js/featherlight.min.js"></script>
+<script src="/TheVwj/js/html5shiv-printshiv.min.js"></script>
+
+<script src="/TheVwj/js/modernizr.custom.71422.js"></script>
+<script src="/TheVwj/js/docdock.js"></script>
+<script src="/TheVwj/theme-original/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 6 Notes on TheVwj</title>
+    <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/</link>
+    <description>Recent content in Chapter 6 Notes on TheVwj</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Angles</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/angles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/angles/</guid>
+      <description>Notes: An angle in &amp;lsquo;standard&amp;rsquo; position has its initial side on the positive x-axis and vertex at the origin point, (0,0).
+Converting between degrees and radians: If the units of an angle is not specified, they&amp;rsquo;re assumed to be in radians.
+ π radians = 180˚
+ (π / 2) = 90˚
+ (π / 3) = 60˚
+ (π / 4) = 45˚
+ (π / 6) = 30˚</description>
+    </item>
+    
+    <item>
+      <title>Trig Functions of right triangles</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/trig_funcs_in_right_triangles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/trig_funcs_in_right_triangles/</guid>
+      <description>Notes: Remember SOHCAHTOA? - Sine with Opposite length OVER the Hypotenuse
+ Cosine with Adjacent length OVER the Hypotenuse  and finally,
+ Tangent with Opposite length OVER the Adjacent length  Don&amp;rsquo;t forget their inverses as well…
+ Cosecant with Hypotenuse OVER the Opposite length
+ Secant with Hypotenuse OVER the Adjacent length
+  and finally,
+ Cotangent with Adjacent length OVER the Opposite length  Well… the Pythagorean Theorem applies!</description>
+    </item>
+    
+    <item>
+      <title>Identities</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/identities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/identities/</guid>
+      <description>Notes: &amp;ldquo;Semantic memory&amp;rdquo; = facts
+&amp;ldquo;Episodic memory&amp;rdquo; = stories, visualization
+&amp;ldquo;Complimentary Sine&amp;rdquo; = Cosine
+All of our Identities still work!
+Standard Identities:  tan(ø) = sin(ø) / cos(ø)
+ tan(ø) = 1 / cot(ø)
+ cot(ø) = cos(ø) / sin(ø)
+ sec(ø) = 1 / cos(ø)
+ csc(ø) = 1 / sin(ø)
+  Cofunction Identities:  cos(ø) = sin((π / 2) - ø)
+ cot(ø) = tan((π / 2) - ø)</description>
+    </item>
+    
+    <item>
+      <title>Law of Sines</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/law_of_sines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/law_of_sines/</guid>
+      <description>The Law of Sines Draw a triangle; Then, divide the triangle into two right triangles. That line is h (stands for height).
+We often label the angles in capital letters such as: A, B, and C.
+The sides that is opposite of the angle is often labeled with the same letter but lower cased, such as: a, b, c.
+Formula sin&amp;copy; = h/a =&amp;gt; (a)*sin&amp;copy; = h;
+sin(A) = h/c =&amp;gt; &amp;copy;*sin(A) = h;</description>
+    </item>
+    
+    <item>
+      <title>Law of Cosines</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/law_of_cosine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-6-notes/law_of_cosine/</guid>
+      <description>The Law of Cosines The Law of Cosine can be used to solve triangles in 2 circumstances: - Given all 3 sides (SSS) - Given 2 sides and the included angle (SAS)
+Example Given this triangle: [ Insert Screenshot image of triangle ]
+With the triangle above, the coordinates of B are the hardest to find. We can find it with the formulas:
+cos(A) = x/c = &amp;copy;cos(A) = x;</description>
+    </item>
+    
+  </channel>
+</rss>

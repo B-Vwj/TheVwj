@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 4 Notes on TheVwj</title>
+    <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/</link>
+    <description>Recent content in Chapter 4 Notes on TheVwj</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exponential Functions</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/exponential_functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/exponential_functions/</guid>
+      <description>Notes: Terms Exponential Functions: is a function that can be written in the form&amp;hellip; *f(x) = c * ax*; Where the number &amp;lsquo;c&amp;rsquo; and &amp;lsquo;a&amp;rsquo; are constants.
+&amp;lsquo;c&amp;rsquo; is called the initial value (y-intercept). &amp;lsquo;a&amp;rsquo; is called the growth factor.
+If a &amp;gt; 1; the function is growing. If a &amp;lt; 1; the function is decaying.  Growing: increasing by a FIXED percentage.
+Decaying: decreasing by a FIXED percentage.</description>
+    </item>
+    
+    <item>
+      <title>Logarithmic Functions</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/logarithmic_functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/logarithmic_functions/</guid>
+      <description>Notes: Terms Definition of Logarithm: A logarithm can be defined as an exponent.
+ loga(b) = c means the same as ac = b
+ &amp;ldquo;loga(b) is the power to which we raise &amp;lsquo;a&amp;rsquo; to get &amp;lsquo;b&amp;rsquo;.&amp;ldquo;   Natural Logarithms: These are logarithms with base &amp;lsquo;e&amp;rsquo; (Euler&amp;rsquo;s Number).
+ loge(x) is abbreviated ln(x).
+ &amp;ldquo;ln(x) is the power to which we raise &amp;lsquo;e&amp;rsquo; (Euler&amp;rsquo;s number) to get &amp;lsquo;x&amp;rsquo;.&amp;rdquo;   Common Logarithms: These are logarithms with base 10.</description>
+    </item>
+    
+    <item>
+      <title>Laws of Logarithms</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/laws_of_logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/laws_of_logs/</guid>
+      <description>Notes: Terms The Product Rule:
+*loga(x * y) = loga(x) + loga(y)*
+ It&amp;rsquo;s just a rewritten form of:  *ar * as = ar + s*  The Quotient Rule:
+loga(x / y) = loga(x) - loga(y)
+ It&amp;rsquo;s just a rewritten form of:  ar / as = ar - s  The Power Rule:
+*loga(xc) = C * loga(x)*
+ It&amp;rsquo;s just a rewritten form of:  *(ar)s = ar * s*  Theorems/Formulas The Change of Base Formula:  logab = ln(b) / ln(a) = log(b) / log(a)</description>
+    </item>
+    
+    <item>
+      <title>Exponential and Logarithmic Equations</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/exponential_and_log_equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/exponential_and_log_equations/</guid>
+      <description>Notes: Theorems/Formulas Remember the Compound Interest Formula? (It&amp;rsquo;s alright if you didn&amp;rsquo;t, for now&amp;hellip;)
+Here it is:
+A = P(1 + (r/n))nt
+Where&amp;hellip;
+P =&amp;gt; Principal
+r =&amp;gt; annual interest rate (as a decimal)
+n =&amp;gt; number of compoundings in a year
+t =&amp;gt; time in years
+A =&amp;gt; accumulated value
+Now, there&amp;rsquo;s a formula for Continuously Compounded Interest.
+This means roughly that interest is compunded infinitely many times per year.</description>
+    </item>
+    
+    <item>
+      <title>Modeling with Exponential and Logarithmic Functions</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/modeling_with_exp_and_log_functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/mathematics/college-algebra-trig/notes/chapter-4-notes/modeling_with_exp_and_log_functions/</guid>
+      <description>Notes: This section was mostly just example problems. I will probably not add those problems onto this site here but rather instead, have them onto my Random Math equation generator. If I ever get that created, then I will post the link here.
+If you&amp;rsquo;re seeing this message, I have been lazy and probably forgot about the project. Shoot me a message about it if you want on my Github or LinkedIn.</description>
+    </item>
+    
+  </channel>
+</rss>
