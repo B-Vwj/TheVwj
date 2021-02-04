@@ -12,6 +12,7 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.PAT_GH_TOKEN }}
           path: thevwj
+          ref: master
 
       - name: Temporary Hugo Directory
         run: mkdir /tmp/hugo/
