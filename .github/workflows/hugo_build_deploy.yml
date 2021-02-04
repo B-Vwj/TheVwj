@@ -97,4 +97,4 @@ jobs:
           force: true
           github_token: ${{ secrets.PAT_TOKEN }}
           branch: gh-pages
-          directory: /home/runner/work/TheVwj/TheVwj/thevwj/
+          directory: /home/runner/work/TheVwj/TheVwj/thevwj/public/
