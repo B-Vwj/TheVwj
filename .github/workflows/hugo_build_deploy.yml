@@ -26,7 +26,7 @@ jobs:
           extended: true
 
       # Clone Down Branches
-      - name: School Note Checkout
+      - name: School Notes Checkout
         uses: actions/checkout@v2
         with:
           repository: B-Vwj/School-Notes
