@@ -6,6 +6,7 @@ jobs:
   hugo_build_deploy:
     runs-on: ubuntu-18.04
     steps:
+      # Checkout Main Branch
       - name: Git Checkout
         uses: actions/checkout@v2
         with:
@@ -13,40 +14,27 @@ jobs:
           persist-credentials: false
           token: ${{ secrets.PAT_GH_TOKEN }}
           path: thevwj
-          ref: master
 
+      # Hugo Stuff
       - name: Temporary Hugo Directory
         run: mkdir /tmp/hugo/
 
-      # - name: Set Env
-      #   id: set_version
-      #   run: |
-      #     git fetch --tags
-      #     echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//} >> $GITHUB_ENV
-          
-      # - name: Last Tag
-      #   run: |
-      #     echo ::set-output name=LAST_VALUE::$($VERSION | awk -F'.' '{print $3}') >> $GITHUB_ENV
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.59.1"
+          extended: true
 
-      # - name: Create New Tag
-      #   run: |   
-      #     $LAST_VALUE=$((LAST_VALUE+1))
-      #     echo ::set-output name=NEW_TAG::$($CURRENT_TAG | awk -v last="$LAST_VALUE" -F'.' '{print $1"."$2"."last}') >> $GITHUB_ENV
-
-      # - name: test
-      #   run: |
-      #     echo $NEW_TAG
-        
-      # Pull documentation files
+      # Clone Down Branches
       - name: School Note Checkout
         uses: actions/checkout@v2
         with:
           repository: B-Vwj/School-Notes
-
           token: ${{ secrets.PAT_TOKEN }}
           path: school_notes
           ref: master
 
+      # Clean Up Main Site
       - name: Clean-Up
         run: |
           cd thevwj
@@ -63,19 +51,14 @@ jobs:
           cp -R /tmp/hugo/theme-original        /home/runner/work/TheVwj/TheVwj/thevwj/static/
           cd ..
 
+      # Copy Files
       - name: Pull_School_Notes
         run: |
           cd school_notes
           cp -R school_notes                    /home/runner/work/TheVwj/TheVwj/thevwj/content/
 
       # Next two stages should always be last
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: "0.59.1"
-          extended: true
-
-      - name: Build
+      - name: Prep
         run: |
           cd /home/runner/work/TheVwj/TheVwj/thevwj/
           git fetch origin
@@ -87,16 +70,29 @@ jobs:
           rm -rf public/*
           hugo
 
-      - name: Deploy To Master Branch
+      - name: Commit To Master Branch
         run: |
           cd /home/runner/work/TheVwj/TheVwj/thevwj/
           git config --global user.email ${{ secrets.GH_EMAIL }}
           git config --global user.name ${{ secrets.GH_USER }}
           git add .
           git commit -m "GitHub Actions build ${GITHUB_RUN_NUMBER}"
-          git push -u -f origin "https://x-access-token:${GH_DEPLOY}@github.com/TheVwj.git"
+
+      - name: Deploy To Master Branch 
+        uses: ad-m/github-push-action@master
+        with:
+          force: true
+          github_token: ${{ secrets.PAT_TOKEN }}
+          branch: master
+
+      - name: Commit To GH-Pages Branch
+        run: |
           cd public 
           git init && git add --all && git commit -m "Publishing To GH-Pages"
-          git push -f origin gh-pages
-        env:
-          GH_DEPLOY: ${{ secrets.GH_DEPLOY }}
+
+      - name: Deploy to GH-Pages Branch
+        uses: ad-m/github-push-action@master
+        with:
+          force: true
+          github_token: ${{ secrets.PAT_TOKEN }}
+          branch: gh-pages
