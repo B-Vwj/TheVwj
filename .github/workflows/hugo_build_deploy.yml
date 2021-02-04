@@ -91,7 +91,7 @@ jobs:
         run: |
           cd /home/runner/work/TheVwj/TheVwj/thevwj/
           git config --global user.email ${{ secrets.GH_EMAIL }}
-          git config --global user.name ${ secrets.GH_USER }
+          git config --global user.name ${{ secrets.GH_USER }}
           git add .
           git remote set-url 
           git commit -m "GitHub Actions build ${ GITHUB_RUN_NUMBER }"
