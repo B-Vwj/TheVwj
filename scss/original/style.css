@@ -1446,11 +1446,6 @@ pre .copy-to-clipboard:hover {
   display: block;
 }
 
-#sidebar ul.topics > li > span > a {
-  /*line-height: 2rem;
-		    font-size: 1.1rem*/
-}
-
 #sidebar ul.topics > li > span > a b {
   opacity: 0.5;
   font-weight: normal;
@@ -1462,14 +1457,14 @@ pre .copy-to-clipboard:hover {
 
 #sidebar ul.topics > li.parent a,
 #sidebar ul.topics > li.active a {
-  color: #fff;
+  color: #323232;
   -webkit-transition: color 0.15s ease;
   transition: color 0.15s ease;
 }
 
 #sidebar ul.topics > li.parent a:hover,
 #sidebar ul.topics > li.active a:hover {
-  color: #e6e6e6;
+  color: 323232;
   -webkit-transition: color 0.15s ease;
   transition: color 0.15s ease;
 }
