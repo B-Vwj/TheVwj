@@ -51,7 +51,7 @@ jobs:
           cp /tmp/hugo/_header.md               /home/runner/work/TheVwj/TheVwj/thevwj/content/
           cp /tmp/hugo/_footer.md               /home/runner/work/TheVwj/TheVwj/thevwj/content/
           cp -R /tmp/hugo/theme-original        /home/runner/work/TheVwj/TheVwj/thevwj/static/
-          co -R /tmp/hugo/logo                  /home/runner/work/TheVwj/TheVwj/thevwj/static/
+          cp -R /tmp/hugo/logo                  /home/runner/work/TheVwj/TheVwj/thevwj/static/
           cd ..
 
       # Copy Files
