@@ -1,1 +1,3 @@
-[![logo]({{< md_image img="{{< Site.BaseURL >}}/static/logo/vwj_logo.png" >}})](https://b-vwj.github.io/TheVwj/)
+<a href="https://b-vwj.github.io/TheVwj/">
+    {{< md_image img="/static/logo/vwj_logo.png" >}}
+</a>
