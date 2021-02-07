@@ -1,3 +1,3 @@
-<a href="https://b-vwj.github.io/TheVwj/" alt="logo">
-    {{< md_image img="../static/logo/vwj_logo.png" >}}
+<a href="{{< Site.BaseURL >}}">
+    <img src="../static/logo/vwj_logo.png" alt="logo">
 </a>
