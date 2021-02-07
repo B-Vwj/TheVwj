@@ -6,4 +6,4 @@ weight = 1
 +++
 
 ## School Notes
-{{% children depth="12" description="true" sort="Weight" showhidden="false" %}}
+{{% children depth="99" description="true" sort="Weight" showhidden="false" %}}
