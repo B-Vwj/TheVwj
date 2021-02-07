@@ -1,1 +1,1 @@
-[![](../static/logo/vwj_logo.png)](/)
+[![](/static/logo/vwj_logo.png)](/)
