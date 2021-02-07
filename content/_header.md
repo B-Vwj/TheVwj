@@ -1,1 +1,1 @@
-[![logo](/static/logo/vwj_logo.png)](/)
+[![logo](../static/logo/vwj_logo.png)](/TheVwj)
