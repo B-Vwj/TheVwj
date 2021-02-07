@@ -425,6 +425,15 @@ f(x) = (2x+5)/(x-2)  When x is close to 2, x-2 is close to 0, so dividing by a v
     </item>
     
     <item>
+      <title>test</title>
+      <link>https://b-vwj.github.io/TheVwj/school_notes/testing/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://b-vwj.github.io/TheVwj/school_notes/testing/test/</guid>
+      <description>School Notes  Communication Notes La Communication! Fundamentals of Public Speaking Fundamentals of Public Speaking Notes: Good questions to ask yourself: How are you feeling today? What are the causes for that feeling? Why does that cause what you are feeling? The Four Types of Speeches: 1. Manuscript (written out word for word) - Pros: - You know what you&#39;ll say; - Timing is perfect; - No eye contact; - Cons: - You&#39;ll sound robotic; - Losing your place is very bad; - No eye contact; 1.</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://b-vwj.github.io/TheVwj/_footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -439,7 +448,7 @@ f(x) = (2x+5)/(x-2)  When x is close to 2, x-2 is close to 0, so dividing by a v
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://b-vwj.github.io/TheVwj/_header/</guid>
-      <description>https://b-vwj.github.io/TheVwj/../static/logo/vwj_logo.png </description>
+      <description></description>
     </item>
     
   </channel>
