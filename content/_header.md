@@ -1,3 +1,1 @@
-<a id="logo" href="{{ .Site.BaseURL }}">
-    </img src="./../static/logo/vwj_logo.png" alt="vwj_logo">
-</a>
+[![ vwj_logo ](./../static/logo/vwj_logo.png)]({{ .Site.BaseURL }})
