@@ -1109,7 +1109,7 @@ pre .copy-to-clipboard:hover {
   margin-right: 1rem !important; }
 
 #sidebar {
-  background-color: #2053AB;
+  background-color: #323232;
   position: fixed;
   top: 0;
   width: 300px;
@@ -1213,7 +1213,7 @@ pre .copy-to-clipboard:hover {
       -ms-transition: color 0.15s ease;
       transition: color 0.15s ease; }
     #sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
-      background: #183f81;
+      background: #323232;
       margin-left: -1rem;
       margin-right: 0rem;
       padding-left: 1rem;
