@@ -6,5 +6,3 @@ weight = 1
 +++
 
 ## American Government and Politics
-
-### Notes:

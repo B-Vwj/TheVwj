@@ -7,9 +7,8 @@ weight = 1
 
 ## Les Mathematiques
 
-## Update!
+Historical Artifact Note:
 
-Due to Coronavirus, campus is closed, and the rest of semester is now online, here is the schedule for **les Mathematics**:
 ```
 Dear Math 1180 students,
 

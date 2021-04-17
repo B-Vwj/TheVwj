@@ -6,4 +6,4 @@ weight = 1
 +++
 
 ## Le Gouvernement
-{{% children depth="12" description="true" sort="Weight" showhidden="false" %}}
+{{% children depth="1" description="true" sort="Weight" showhidden="false" %}}
